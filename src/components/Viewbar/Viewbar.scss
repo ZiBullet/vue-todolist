@@ -1,0 +1,49 @@
+@use "../../assets/scss/mixins.scss" as *;
+
+.viewbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    &__title {
+        color: var(--black);
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    &__btn {
+        width: 120px;
+        height: 56px;
+
+        color: var(--purple);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        background: #FFFBFE linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11));
+
+        box-shadow: 0px 1px 3px 0px #0000004D,
+            0px 4px 8px 3px #00000026;
+        padding: 20px;
+        border-radius: 16px;
+        transition: .2s;
+
+
+        &:hover,
+        &:focus-visible {
+            box-shadow: 0px 1px 3px 0px #00000062,
+                0px 4px 8px 3px #00000045;
+        }
+
+        @include media(774px) {
+            display: none;
+        }
+    }
+}

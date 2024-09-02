@@ -1,0 +1,9 @@
+@import "./base.scss", "./fonts.scss";
+
+// components
+
+@import "../../components/Header/Header.scss",
+    "../../components/Viewbar/Viewbar.scss",
+    "../../components/Notes/Notes.scss",
+    "../../components/Modal/Modal.scss",
+    "../../components/AddBtn/AddBtn.scss";

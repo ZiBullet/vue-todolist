@@ -1,0 +1,19 @@
+.add-btn {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    border-radius: 16px;
+    background: #FFFBFE linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11));
+    transition: .2s;
+
+    &:hover {
+        scale: 1.05;
+    }
+}
