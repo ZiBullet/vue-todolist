@@ -9,7 +9,7 @@
         <button class="viewbar__btn" @click="onViewListClick">
             <img v-show="viewList" src="@/assets/icons/grid.svg" alt="grid">
             <img v-show="!viewList" src="@/assets/icons/list.svg" alt="list">
-            <span>{{ viewList ? t("grid") : $t("list") }}</span>
+            <span>{{ viewList ? $t("grid") : $t("list") }}</span>
         </button>
     </div>
 </template>
